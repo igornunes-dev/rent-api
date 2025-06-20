@@ -1,0 +1,4 @@
+CREATE TABLE owner (
+    id UUID PRIMARY KEY,
+    CONSTRAINT fk_owner_user FOREIGN KEY (id) REFERENCES users(id) ON DELETE CASCADE
+);

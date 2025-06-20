@@ -1,0 +1,4 @@
+CREATE TABLE tenant (
+    id UUID PRIMARY KEY,
+    CONSTRAINT fk_tenant_user FOREIGN KEY (id) REFERENCES users(id) ON DELETE CASCADE
+);
